@@ -1,0 +1,82 @@
+[
+{
+  "model": "outfits.outfit",
+  "pk": 2,
+  "fields": {
+    "title": "You own this",
+    "quote": "\"Passion is energy. Feel the power that comes from focusing on what excites you.\"",
+    "detail": "Oprah Winfrey's career has spanned every form of media and beyond. She has had a turn in being an actress, talk show host, producer, and philanthropist. Net worth $2.7billion",
+    "image": "shorturl.at/dG237",
+    "number_of_pieces": 1,
+    "item_1": "Black jumpsuit with a crossover bodice",
+    "image_1": "shorturl.at/gnoHR",
+    "price_1": 37,
+    "item_2": null,
+    "image_2": null,
+    "price_2": null,
+    "item_3": null,
+    "image_3": null,
+    "price_3": null
+  }
+},
+{
+  "model": "outfits.outfit",
+  "pk": 3,
+  "fields": {
+    "title": "Simple and Confident",
+    "quote": "The biggest adventure you can ever take is to live the life of your dreams.",
+    "detail": "Oprah Winfrey's career has spanned every form of media and beyond. She has had a turn in being an actress, talk show host, producer, and philanthropist. Net worth $2.7billion.",
+    "image": "shorturl.at/krvX6",
+    "number_of_pieces": 2,
+    "item_1": "Minimalist white dress",
+    "image_1": "shorturl.at/clAQ7",
+    "price_1": 40,
+    "item_2": null,
+    "image_2": null,
+    "price_2": null,
+    "item_3": null,
+    "image_3": null,
+    "price_3": null
+  }
+},
+{
+  "model": "outfits.outfit",
+  "pk": 4,
+  "fields": {
+    "title": "Bright as the day",
+    "quote": "\"There is always light, if only we're brave enough to see it; if only we're brave enough to be it.\"",
+    "detail": "Amanda Gorman aged 22 is is the youngest inaugural poet in US history. Her poem reflected people uniting.",
+    "image": "shorturl.at/ekuxP",
+    "number_of_pieces": 1,
+    "item_1": "Yellow Coat",
+    "image_1": "shorturl.at/bhuEV",
+    "price_1": 60,
+    "item_2": null,
+    "image_2": null,
+    "price_2": null,
+    "item_3": null,
+    "image_3": null,
+    "price_3": null
+  }
+},
+{
+  "model": "outfits.outfit",
+  "pk": 5,
+  "fields": {
+    "title": "Self-confidence is the best outfit",
+    "quote": "\"Being a woman can lead to many challenges, but it’s about taking those challenges and making them work for you, not against you\"",
+    "detail": "Natalie Holst is the designer and owner of |HOLST + LEE|, an NYC based Fashion and Jewellery House.Recently she did a collection for Breast Cancer Research.",
+    "image": "shorturl.at/afCKL",
+    "number_of_pieces": 2,
+    "item_1": "Jean Jumpsuit",
+    "image_1": "shorturl.at/uxR58",
+    "price_1": 22,
+    "item_2": "Black leather Jacket",
+    "image_2": "shorturl.at/epwMW",
+    "price_2": 43,
+    "item_3": null,
+    "image_3": null,
+    "price_3": null
+  }
+}
+]
