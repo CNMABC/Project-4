@@ -24,5 +24,3 @@ class CommentDetailView(APIView):
             raise NotFound(detail="Comment not found")
         comment_to_delete.delete() # delete from table
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-
