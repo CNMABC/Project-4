@@ -8,15 +8,17 @@ const NavBar = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container>
-          <Col>
-            <Navbar.Brand href="#home">Power Dressing </Navbar.Brand>
+        <Container fluid>
+          <Col md={5}>
+            <LinkContainer to='/'>
+              <Navbar.Brand href="#home">Power Dressing </Navbar.Brand>
+            </LinkContainer>
           </Col>
-          <Col>
+          <Col md={5}>
             <Nav className="me-auto">
-              <LinkContainer to='/'>
+              {/* 
                 <Nav.Link href="#home">Home</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
               <LinkContainer to='/outfits'>
                 <Nav.Link href="#features"> Browse Outfits</Nav.Link>
               </LinkContainer>
@@ -24,7 +26,7 @@ const NavBar = () => {
           </Col>
           <Col>
             <LinkContainer to='/basket'>
-              <Nav.Link href="#pricing">Basket</Nav.Link>
+              <Nav.Link href="#pricing">Bag</Nav.Link>
             </LinkContainer>
           </Col>
         </Container>
