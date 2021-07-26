@@ -1,0 +1,15 @@
+<Row xs={1} md={2} className="g-4">
+      {Array.from({ length: 4 }).map((outfits, idx) => (
+        <Col>
+          <Card>
+            <Card.Img variant="top" src={outfits.image} />
+            <Card.Body>
+              <Card.Title>{outfits.title}</Card.Title>
+              <Card.Text>
+                {outfits.quote}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>

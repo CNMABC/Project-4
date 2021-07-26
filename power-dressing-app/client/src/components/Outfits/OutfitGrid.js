@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Container, Row } from 'react-bootstrap'
-// import OutfitCard from './OutfitCard'
+import OutfitCard from './OutfitCard'
 
 const OutfitGrid = () => {
   const [outfits, setOutfits] = useState([])
@@ -23,20 +23,29 @@ const OutfitGrid = () => {
 
 
   return (
-    <section>
-      <Container fluid>
-        <Row xs="1" sm="2" md="3">
-          {outfits.map(outfit => {
-            return <div key={outfit._id}>
-              <p>{outfit.title}, {outfit.image}</p>
-              {/* <OutfitCard/>  */}
-            </div>
-          })}
-        </Row>
-      </Container>
-    </section>
+    <>
+      <section>
+        <Container fluid>
+          <>
 
+            <Row xs="1" sm="2" md="3">
+              {outfits.map(outfit => {
+                return <OutfitCard key={outfit._id} {...outfit} />
+              })}
+            </Row>
+          </>
+        </Container>
+      </section>
+    </>
   )
 }
+
+//   outfits.map(outfit => {
+//     return
+//     // <div key={outfit._id}></div>
+
+//   })
+// }
+
 
 export default OutfitGrid
