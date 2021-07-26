@@ -20,13 +20,13 @@ const NavBar = () => {
                 <Nav.Link href="#home">Home</Nav.Link>
               </LinkContainer> */}
               <LinkContainer to='/outfits'>
-                <Nav.Link href="#features"> Browse Outfits</Nav.Link>
+                <Nav.Link > Browse Outfits</Nav.Link>
               </LinkContainer>
             </Nav>
           </Col>
           <Col>
             <LinkContainer to='/basket'>
-              <Nav.Link href="#pricing">Bag</Nav.Link>
+              <Nav.Link>Bag</Nav.Link>
             </LinkContainer>
           </Col>
         </Container>
