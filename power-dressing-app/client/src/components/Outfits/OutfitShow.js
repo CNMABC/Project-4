@@ -64,7 +64,7 @@ const OutfitShow = () => {
         </Row>
         :
         <h2 className="title has-text-centered">
-          {hasError ? 'Oh something went wrong, the sadness 😞' : '...loading '}</h2>
+          {hasError ? 'Oh something went wrong ' : '...loading '}</h2>
       }
     </Container >
   )
