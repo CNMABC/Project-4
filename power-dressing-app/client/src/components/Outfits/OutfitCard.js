@@ -3,18 +3,18 @@ import { Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 
-const OutfitCard = ({ _id, title, image }) => {
+const OutfitCard = ({ id, title, image }) => {
 
   return (
     <Card style={{ width: '18rem' }}>
 
       <Card.Img className="card-image" variant="top" img src={`${image}`} />
-      <Card.Body id={_id}>
+      <Card.Body id={id}>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
           {/* {quote} */}
         </Card.Text>
-        <Link to={`/outfits/${_id}`}>
+        <Link to={`/outfits/${id}`}>
           <Button variant="primary">Go somewhere</Button>
         </Link>
       </Card.Body>

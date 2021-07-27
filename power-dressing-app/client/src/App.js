@@ -14,17 +14,17 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <Home />
+        <Route path="/outfits/:id">
+          <OutfitShow />
         </Route>
         <Route exact path="/outfits">
           <OutfitPage />
         </Route>
-        <Route path="/outfits/:id">
-          <OutfitShow />
-        </Route>
         <Route path="/basket">
           <Basket />
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
     </BrowserRouter>
