@@ -55,7 +55,7 @@ const OutfitShow = () => {
           <Col sm={6}>
             <div className="text-center" >
               <p>{outfit.item_1}</p>
-              <img src={outfit.image_1} alt={outfit.title} />
+              <img src={outfit.image_1} alt={outfit.title} className="individ-image"/>
               <h3 className="price">£{outfit.price_1}.00</h3>
               <div className="accordion-header">
                 <Accordion defaultActiveKey="0">

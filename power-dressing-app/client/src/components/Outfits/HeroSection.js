@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jumbotron, Button } from 'reactstrap'
+import { Jumbotron } from 'reactstrap'
 
 const HeroSection = () => {
 
@@ -7,11 +7,10 @@ const HeroSection = () => {
     <div className="hero-index-page">
       <Jumbotron >
         <h1 className="display-3">What should you wear?</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p className="lead"></p>
         <hr className="my-2" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <h5>It can be tricky to find the right outfit to make you feel <span className="confident-show">confident,</span> <span className="powerful-show">powerful</span> and <span className="comfortable-show">comfortable</span></h5>
         <p className="lead">
-          <Button color="primary">Learn More</Button>
         </p>
       </Jumbotron>
     </div>

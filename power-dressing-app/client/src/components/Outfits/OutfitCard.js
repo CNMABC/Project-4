@@ -15,7 +15,7 @@ const OutfitCard = ({ id, title, image }) => {
           {/* {quote} */}
         </Card.Text>
         <Link to={`/outfits/${id}`}>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="outline-dark">Go somewhere</Button>
         </Link>
       </Card.Body>
 

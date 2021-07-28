@@ -4,10 +4,10 @@
   font-size: 80px;
   padding-top: 80px;
   padding-bottom: 60px;
-  font-family: 'Alice', serif;
+  font-family: 'Oswald', sans-serif;
   // background-image: url("https://images.pexels.com/photos/1149019/pexels-photo-1149019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  color: rgb(5, 0, 4);
-  text-shadow: 2px 2px #f70098;
+  color: rgb(7, 4, 6);
+  // text-shadow: 2px 2px #f70098;
   // width: auto;
   // height: auto;
 }
@@ -16,13 +16,13 @@
 
 .hero-index-page {
   padding-top: 60px;
-  background-image: url('https://res.cloudinary.com/difzbdm7n/image/upload/v1627477025/Screenshot_2021-07-28_at_13.56.57_yfof4c.png');
+  // background-image: url('https://res.cloudinary.com/difzbdm7n/image/upload/v1627477025/Screenshot_2021-07-28_at_13.56.57_yfof4c.png');
   padding-bottom: 60px;
-  font-family: 'Alice', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navbar-expand {
-  font-family: 'Alice', serif;
+  font-family: 'Oswald', sans-serif;
   background: white;
 } 
 
@@ -59,9 +59,10 @@
 //Basket page
 
 .item-img {
-  height: 300px;
-  width: 150px;
+  height: 220px;
+  width: 100px;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .basket-item-name {
@@ -70,14 +71,27 @@
 
 .basket-title {
   padding-top: 20px;
+  padding-left: 35px;
 }
 
 .price-basket {
   padding-top: 30px;
 }
 
+.size-input-area {
+  padding-top: 100px;
+}
+
 // Cards
 
 .card {
   border: 20px;
+}
+
+//individual outfit
+
+.individ-image{
+  padding-top: 30px;
+  height: 580px;
+  width: 300px;
 }

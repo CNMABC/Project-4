@@ -4,7 +4,7 @@
 // checkout page has all items in it 
 // add up amount of price items give total 
 import React, { useEffect, useState } from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Button } from 'react-bootstrap'
 
 
 const Basket = () => {
@@ -13,7 +13,7 @@ const Basket = () => {
   useEffect(() => {
     const getBasketFromLocalStorage = () => {
       const items = JSON.parse(localStorage.getItem('outfits'))
-      console.log('items in basket', items)
+      // console.log('items in basket', items)
       setBasketItems(items)
     }
     getBasketFromLocalStorage()
@@ -21,7 +21,11 @@ const Basket = () => {
   }, [])
 
 
+  //Increase Quantity of items in basket
 
+  //Decrease Quantity of items in basket 
+
+  //total the amount of price 
 
 
   return (
@@ -40,15 +44,18 @@ const Basket = () => {
                         <Row>
                           <Col sm><div ><img src={basketItem.image_1} alt={basketItem.title} className="item-img"></img></div></Col>
                           <Col sm><h5 key={basketItem.id} className="basket-item-name text-center align-items">{basketItem.item_1}</h5></Col>
-                          <Col sm><p className=" price-basket text-center">Price: £{basketItem.price_1}</p></Col>
+                          <Col sm><p className=" price-basket text-center">Price: £{basketItem.price_1}.00</p>
+                            <p>Quantity</p><Button variant="secondary">+</Button><Button variant="light">0</Button><Button variant="secondary">-</Button>
+                            <form>
+                              <label className=" size-input-area text-center">
+                                Size :
+                                <input type="text" name="name" />
+                              </label>
+                            </form>
+                          </Col>
                         </Row>
+                        <hr className="mt-2 mb-3" />
                       </Container>
-
-                      {/* <p>Quantity: {basketItem[1].quantity}</p>
-              <strong>
-                <p>Subtotal: £{basketItem[1].total}</p>
-              </strong> */}
-                      {/* <Button variant='outline-warning' value={basketItem[1].id} onClick={handleDelete}>Delete</Button> */}
                     </>
                   )
                 }
@@ -56,7 +63,14 @@ const Basket = () => {
               })}
             </div>
           </Col>
-          <Col xs={12} md={8}></Col>
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col></Col>
+          <Col>
+            <h4>Total : £ .00</h4>
+          </Col>
+          <Col></Col>
         </Row>
 
       </Container>
