@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Container, Row, Col, Button, Accordion } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+// import { LinkContainer } from 'react-router-bootstrap'
 
 
 
 const OutfitShow = () => {
   const [outfit, setOutfit] = useState({})
   const [hasError, setHasError] = useState(false)
+  const [buyButtonClicked, setBuyButtonClicked] = useState(false)
   const { id } = useParams()
 
 
@@ -24,7 +25,17 @@ const OutfitShow = () => {
     getData()
   }, [id])
 
+  // function created to run when buy button is clicked
+  const addOutfitToBasket = () => {
+    // we need to see what is currently in local storage
+    const currentItems = JSON.parse(localStorage.getItem('outfits'))
+    console.log('current items', currentItems)
+    const itemsToAdd = currentItems ? [...currentItems, { ...outfit }] : [ { ...outfit }]
+    localStorage.setItem('outfits', JSON.stringify(itemsToAdd))
+    setBuyButtonClicked(true)
+  }
   console.log('outfit', outfit)
+
 
   return (
 
@@ -56,9 +67,7 @@ const OutfitShow = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-              <LinkContainer to='/basket'>
-                <Button variant="info" size="lg">Buy Outfit</Button>
-              </LinkContainer>
+              <Button onClick={addOutfitToBasket} variant={buyButtonClicked ? 'secondary' : 'info'} size="lg">{buyButtonClicked ? 'Added to basket' : 'Buy Item'}</Button>
             </div>
           </Col>
         </Row>

@@ -6,16 +6,25 @@
   padding-bottom: 60px;
   font-family: 'Alice', serif;
   // background-image: url("https://images.pexels.com/photos/1149019/pexels-photo-1149019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  color: black;
+  color: rgb(5, 0, 4);
+  text-shadow: 2px 2px #f70098;
+  // width: auto;
+  // height: auto;
 }
 
 // Index Page
 
 .hero-index-page {
   padding-top: 60px;
-  background: pink;
+  background-image: url('https://res.cloudinary.com/difzbdm7n/image/upload/v1627477025/Screenshot_2021-07-28_at_13.56.57_yfof4c.png');
   padding-bottom: 60px;
+  font-family: 'Alice', serif;
 }
+
+.navbar-expand {
+  font-family: 'Alice', serif;
+  background: white;
+} 
 
 .filter-index-page{
   padding: 25px;
@@ -45,4 +54,30 @@
 
 .price {
   margin:30px;
+}
+
+//Basket page
+
+.item-img {
+  height: 300px;
+  width: 150px;
+  padding-top: 30px;
+}
+
+.basket-item-name {
+  padding-top: 30px;
+}
+
+.basket-title {
+  padding-top: 20px;
+}
+
+.price-basket {
+  padding-top: 30px;
+}
+
+// Cards
+
+.card {
+  border: 20px;
 }

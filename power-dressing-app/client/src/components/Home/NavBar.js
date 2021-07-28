@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="nav-bar-background">
         <Container fluid>
           <Col md={5}>
             <LinkContainer to='/'>
