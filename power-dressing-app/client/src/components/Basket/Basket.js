@@ -45,7 +45,7 @@ const Basket = () => {
                           <Col sm><div ><img src={basketItem.image_1} alt={basketItem.title} className="item-img"></img></div></Col>
                           <Col sm><h5 key={basketItem.id} className="basket-item-name text-center align-items">{basketItem.item_1}</h5></Col>
                           <Col sm><p className=" price-basket text-center">Price: £{basketItem.price_1}.00</p>
-                            <p>Quantity</p><Button variant="secondary">+</Button><Button variant="light">0</Button><Button variant="secondary">-</Button>
+                            <p>Quantity</p><Button variant="secondary">-</Button><Button variant="light">0</Button><Button variant="secondary">+</Button>
                             <form>
                               <label className=" size-input-area text-center">
                                 Size :

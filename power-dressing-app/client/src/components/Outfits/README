@@ -20,5 +20,100 @@
 ________________________________________________________________
 Basket : 
 
-  
+  /* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
+import { Container, Row, Col, Button, Accordion } from 'react-bootstrap'
+const OutfitShow = () => {
+  const [outfit, setOutfit] = useState({})
+  const [hasError, setHasError] = useState(false)
+  const [buttonClicked, setButtonClicked] = useState(false)
+  const { id } = useParams()
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await axios.get(`/api/outfits/${id}`)
+        setOutfit(data)
+      } catch (err) {
+        setHasError(true)
+      }
+    }
+    getData()
+  }, [id])
+  // * function to run when add to basket button is clicked
+  // we cant store arrays and objects in local storage by default
+  // so to store we need to make it a JSON string (which is JSON.stringify)
+  // when we get it out again we use JSON.parse to change it back to javascript
+  const addOutfitToBasket = () => {
+    // first thing is to get anything thats currently in local storage
+    const currentItems = JSON.parse(localStorage.getItem('outfits'))
+    // create a new array with the new outfit from state and add to whats existing in localstorage
+    const itemsToAdd = [...currentItems, { ...outfit } ]
+    // set new array of outfit objects to local storage
+    localStorage.setItem('outfits', JSON.stringify(itemsToAdd))
+    setButtonClicked(true)
+  }
+  console.log('outfit', outfit)
+  return (
+    <Container fluid className="container-show-card">
+      <div className="header-outfit-show" >
+        <h1 className="text-center">{outfit.title}</h1>
+      </div >
+      {outfit ?
+        <Row>
+          <Col sm={6}>
+            <div className="text-center">
+              <img src={outfit.image} alt={outfit.title} />
+              <p>{outfit.quote}</p>
+              <p>{outfit.detail}</p>
+            </div>
+          </Col>
+          <Col sm={6}>
+            <div className="text-center" >
+              <p>{outfit.item_1}</p>
+              <img src={outfit.image_1} alt={outfit.title} />
+              <h3 className="price">£{outfit.price_1}.00</h3>
+              <div className="accordion-header">
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Details</Accordion.Header>
+                    <Accordion.Body>
+                      <p>{outfit.description}</p>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+              <Button onClick={addOutfitToBasket} variant={buttonClicked ? 'secondary' : 'info'} size="lg">{buttonClicked ? 'Added to basket' : 'Buy outfit'}</Button>
+            </div>
+          </Col>
+        </Row>
+        :
+        <h2 className="title has-text-centered">
+          {hasError ? 'Oh something went wrong ' : '...loading '}</h2>
+      }
+    </Container >
+  )
+}
+export default OutfitShow
  
+<Container>
+          <Row>
+            <Col>1 of 2</Col>
+            <Col>2 of 2</Col>
+          </Row>
+          <Row>
+            <Col>1 of 3</Col>
+            <Col>2 of 3</Col>
+            <Col>3 of 3</Col>
+          </Row>
+          <Row>
+            <Col>1 of 2</Col>
+            <Col>2 of 2</Col>
+          </Row>
+          <Row>
+            <Col>1 of 3</Col>
+            <Col>2 of 3</Col>
+            <Col>3 of 3</Col>
+          </Row>
+        </Container>

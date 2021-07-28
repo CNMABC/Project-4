@@ -1,52 +1,45 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Button, Nav } from 'react-bootstrap'
 import Typewriter from 'typewriter-effect'
+import { LinkContainer } from 'react-router-bootstrap'
+
 
 
 
 const Home = () => {
   return (
     <>
-
-      <Container fluid>
-        <div className='hero-title'>
-          <Row>
-            <Col xs={4}></Col>
-            <Col xs={7}>
-              <Typewriter
-                options={{
-                  className: 'hero-title', strings: ['You are powerful', 'Dress in confidence', 'You are beautiful', 'Be who you want', 'You are strong', 'Dream big', 'You are brave'],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </Col>
-            <Col></Col>
-          </Row>
-        </div>
-      </Container>
-      <div className="middle-area-home">
-        <Container>
-          <Row>
-            <Col>1 of 2</Col>
-            <Col>2 of 2</Col>
-          </Row>
-          <Row>
-            <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col>
-          </Row>
-          <Row>
-            <Col>1 of 2</Col>
-            <Col>2 of 2</Col>
-          </Row>
-          <Row>
-            <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col>
-          </Row>
+      <div className="home">
+        <Container fluid>
+          <div className='hero-title'>
+            <Row>
+              <Col xs={3}></Col>
+              <Col xs={7}>
+                <Typewriter
+                  options={{
+                    className: 'hero-title', strings: ['You are powerful', 'Wear confidence', 'You are beautiful', 'Be who you want', 'You are strong', 'Dream big', 'You are not an imposter', 'You are brave'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
         </Container>
+        <div className="middle-area-home">
+        </div>
       </div>
+      <div className="home-second-part">
+        <h6 className="text-center hero-under-text">Clothes for womxn who want to inspire and create change</h6>
+      </div>
+      <div className="text-center">
+        <LinkContainer to="/outfits">
+          <Nav.Link><Button variant="dark" >Show me more</Button></Nav.Link>
+        </LinkContainer>
+      </div>
+
+
     </>
   )
 }

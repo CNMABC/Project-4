@@ -26,7 +26,7 @@ const NavBar = () => {
           </Col>
           <Col>
             <LinkContainer to='/basket'>
-              <Nav.Link>Bag</Nav.Link>
+              <Nav.Link className="dark">Basket</Nav.Link>
             </LinkContainer>
           </Col>
         </Container>
