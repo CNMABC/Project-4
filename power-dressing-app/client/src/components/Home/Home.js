@@ -35,7 +35,7 @@ const Home = () => {
       </div>
       <div className="text-center">
         <LinkContainer to="/outfits">
-          <Nav.Link><Button variant="dark" >Show me more</Button></Nav.Link>
+          <Nav.Link><Button variant="outline-dark" >Show me more</Button></Nav.Link>
         </LinkContainer>
       </div>
 

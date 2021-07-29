@@ -30,7 +30,7 @@ const OutfitShow = () => {
     // we need to see what is currently in local storage
     const currentItems = JSON.parse(localStorage.getItem('outfits'))
     console.log('current items', currentItems)
-    const itemsToAdd = currentItems ? [...currentItems, { ...outfit }] : [ { ...outfit }]
+    const itemsToAdd = currentItems ? [...currentItems, { ...outfit }] : [{ ...outfit }]
     localStorage.setItem('outfits', JSON.stringify(itemsToAdd))
     setBuyButtonClicked(true)
   }
@@ -41,21 +41,24 @@ const OutfitShow = () => {
 
     <Container fluid className="container-show-card">
       <div className="header-outfit-show" >
-        <h1 className="text-center">{outfit.title}</h1>
+        <h1 className="text-center">{outfit.item_1}</h1>
       </div >
       {outfit ?
         <Row>
-          <Col sm={6}>
+          <Col>
             <div className="text-center">
-              <img src={outfit.image} alt={outfit.title} />
-              <p>{outfit.quote}</p>
-              <p>{outfit.detail}</p>
+              <img src={outfit.image} alt={outfit.title} className="individ-image-2" />
+              <span className="boxed">
+                <p className="detailed-picture-1">{outfit.quote}</p>
+                <p className="detailed-picture-2">{outfit.detail}</p>
+              </span>
             </div>
           </Col>
+          <Col md={1}></Col>
           <Col sm={6}>
             <div className="text-center" >
-              <p>{outfit.item_1}</p>
-              <img src={outfit.image_1} alt={outfit.title} className="individ-image"/>
+              {/* <p>{outfit.item_1}</p> */}
+              <img src={outfit.image_1} alt={outfit.title} className="individ-image" />
               <h3 className="price">£{outfit.price_1}.00</h3>
               <div className="accordion-header">
                 <Accordion defaultActiveKey="0">
@@ -67,7 +70,7 @@ const OutfitShow = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-              <Button onClick={addOutfitToBasket} variant={buyButtonClicked ? 'secondary' : 'info'} size="lg">{buyButtonClicked ? 'Added to basket' : 'Buy Item'}</Button>
+              <Button onClick={addOutfitToBasket} variant={buyButtonClicked ? 'secondary' : 'warning'} size="lg">{buyButtonClicked ? 'Added to basket' : 'Add to bag'}</Button>
             </div>
           </Col>
         </Row>

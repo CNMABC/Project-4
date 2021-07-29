@@ -29,6 +29,28 @@
   min-height:400px;
 }
 
+.detailed-picture-1 {
+  padding: 25px 25px 0px 25px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.detailed-picture-2 {
+  padding: 25px 25px 0px 25px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.boxed {
+  border-radius: 10px;
+  border-color: yellowgreen;
+}
+
+.detailed-text-2 {
+  
+}
 // Main Page
 
 .hero-title {
@@ -48,10 +70,12 @@
   height: 180px;
 }
 
+.hero-under-title-text {
+  letter-spacing: 0.8px;
+  padding-top: 10px;
+}
+
 // Index Page
-
-
-
 
 
 .filter-index-page{
@@ -67,8 +91,11 @@
 }
 
 .card-image {
-  height:395px;
+  height:390px;
   width:262px;
+  object-fit: cover;
+  padding:15px;
+
 }
 
 .header-outfit-show{
@@ -113,15 +140,23 @@
 // Cards
 
 .card {
-  border: 20px;
+  margin: 10px;
 }
 
 //individual outfit
 
 .individ-image{
   padding-top: 30px;
-  height: 580px;
-  width: 300px;
+  height: 460px;
+  width: 275px;
+  // object-fit: cover;
+}
+
+.individ-image-2{
+  padding-top: 30px;
+  height: 460px;
+  width: 275px;
+  object-fit: cover;
 }
 
 //index show page
