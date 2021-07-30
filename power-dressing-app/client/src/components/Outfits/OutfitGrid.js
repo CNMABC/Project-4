@@ -24,11 +24,10 @@ const OutfitGrid = () => {
 
   return (
     <>
-      <section>
+      <section className="grid-area">
         <Container fluid>
           <>
-
-            <Row xs="1" sm="2" md="3">
+            <Row xs="1" sm="2" md="4">
               {outfits.map(outfit => {
                 return <OutfitCard key={outfit._id} {...outfit} />
               })}
