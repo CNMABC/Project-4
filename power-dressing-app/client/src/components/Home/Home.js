@@ -34,7 +34,7 @@ const Home = () => {
         <h6 className="text-center hero-under-text">Clothes for womxn who want to inspire and create change</h6>
       </div>
       <div className="text-center">
-        <LinkContainer to="/outfits">
+        <LinkContainer to="/outfits/">
           <Nav.Link><Button variant="outline-dark" >Show me more</Button></Nav.Link>
         </LinkContainer>
       </div>

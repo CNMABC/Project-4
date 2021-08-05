@@ -101,7 +101,7 @@ const Basket = () => {
                 :
                 <>
                   <h2 className="text-center">Your basket is empty</h2>
-                  <LinkContainer to="/outfits">
+                  <LinkContainer to="/outfits/">
                     <Button variant="light"> Lets shop!</Button>
                   </LinkContainer>
                 </>}
