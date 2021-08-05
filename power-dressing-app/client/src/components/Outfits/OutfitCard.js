@@ -12,7 +12,7 @@ const OutfitCard = ({ id, title, image }) => {
         <Card.Body id={id}>
           <Card.Title>{title}</Card.Title> 
           {/* <Card.Text>{category}</Card.Text> */}
-          <Link to={`/outfits/${id}`}>
+          <Link to={`/outfits/${id}/`}>
             <Button variant="outline-dark">Shop now</Button>
           </Link>
         </Card.Body>

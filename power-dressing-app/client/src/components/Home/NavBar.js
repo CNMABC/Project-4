@@ -11,7 +11,7 @@ const NavBar = () => {
         <Container fluid>
           <Col md={5}>
             <LinkContainer to='/'>
-              <Navbar.Brand href="#home">Power Dressing </Navbar.Brand>
+              <Navbar.Brand href="#home">YouDress </Navbar.Brand>
             </LinkContainer>
           </Col>
           <Col md={5}>
@@ -19,13 +19,13 @@ const NavBar = () => {
               {/* 
                 <Nav.Link href="#home">Home</Nav.Link>
               </LinkContainer> */}
-              <LinkContainer to='/outfits'>
+              <LinkContainer to='/outfits/'>
                 <Nav.Link > Browse Outfits</Nav.Link>
               </LinkContainer>
             </Nav>
           </Col>
           <Col>
-            <LinkContainer to='/basket'>
+            <LinkContainer to='/basket/'>
               <Nav.Link className="dark">Basket</Nav.Link>
             </LinkContainer>
           </Col>

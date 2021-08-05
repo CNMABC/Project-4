@@ -5,18 +5,13 @@ from django.db import models
 class Outfit(models.Model):
     title = models.CharField(max_length=50, default=None)
     quote = models.CharField(max_length=150, default=None)
-    detail = models.CharField(max_length=190, blank=True)
-    image = models.CharField(max_length=50, default=None)
+    detail = models.CharField(max_length=1000, blank=True)
+    image = models.CharField(max_length=1000, default=None)
     number_of_pieces = models.PositiveIntegerField(default=None)
     item_1 = models.CharField(max_length=100, default=None)
-    image_1 = models.CharField(max_length=100, default=None)
+    image_1 = models.CharField(max_length=1000, default=None)
     price_1 = models.PositiveIntegerField(default=None)
-    item_2 = models.CharField(max_length=100, null=True, blank=True)
-    image_2 = models.CharField(max_length=100, null=True, blank=True )
-    price_2 = models.PositiveIntegerField(null=True, blank=True)
-    item_3 = models.CharField(max_length=100, null=True, blank=True)
-    image_3 = models.CharField(max_length=100, null=True, blank=True)
-    price_3 = models.PositiveIntegerField(null=True, blank=True)
+    description = models.CharField(max_length=1000, blank=True)
     category = models.ManyToManyField(
         "categories.Category",
         related_name="categories"
