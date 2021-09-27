@@ -8,18 +8,15 @@ It is a full-stack application built with the Django REST Framework and React. I
 
 See website [here](https://power-dressing.herokuapp.com/) and GitHub repo [here](https://github.com/CNMABC/Project-4).
 
-
-
-
 <h2>Brief</h2> 
 <ul>
-<li> Build a full-stack application by making your own backend and front-end</li>
-<li>Use a Python Django API using Django REST Framework to serve your data from a Postgres database</li>
-<li>Consume your API with a separate front-end built with React</li>
-<li>Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models</li>
-<li>Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut</li>
-<li>Have a visually impressive design</li>
-<li>Be deployed online so it's publicly accessible</li>
+<li> Build a full-stack application by making your own back-end and front-end.</li>
+<li>Use a Python Django API using Django REST Framework to serve your data from a Postgres database.</li>
+<li>Consume your API with a separate front-end built with React.</li>
+<li>Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models.</li>
+<li>Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut.</li>
+<li>Have a visually impressive design.</li>
+<li>Be deployed online so it's publicly accessible.</li>
 <li>Write your code DRY and build your APIs RESTful.</li>
 <li>Timeframe: 8 days</li>
 </ul>
@@ -71,7 +68,7 @@ I then created several options in low fidelity wireframes to explore the next di
 
 ![](power-dressing-app/images/image6.png)
 
-Once these were completed I started the process of building my models, views and serialisers in Django REST framework to create a SQL database . I used Table PLus to visualise the postgreSQL database and Insomnia to test the backend requests ensuring all relationships between models responded and all JSON responses were being received as expected. 
+Once these were completed I started the process of building my models, views and serialisers in Django REST framework to create a SQL database . I used Table PLus to visualise the postgreSQL database and Insomnia to test the back-end requests ensuring all relationships between models responded and all JSON responses were being received as expected. 
 
 I then started on my front-end using React Bootstrap to create my different components including home, outfits and basket. I did overestimate my time so I was unable to include my comments model on the front-end or the outfit category filter. 
 
@@ -144,7 +141,7 @@ const Basket = () => {
 <h2>Bugs</h2>
 
 <ul>
-<li>In the basket the same item can be added twice but this appears as an additional item rather than the quantity added increasing by +1 </li>
+<li>In the basket the same item can be added twice but this appears as an additional item rather than the quantity added increasing by +1 .</li>
 </ul>
 
 <h2>Future Improvements </h2>
