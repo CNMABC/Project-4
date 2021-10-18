@@ -18,7 +18,7 @@ See website [here](https://power-dressing.herokuapp.com/) and GitHub repo [here]
 <li>Have a visually impressive design.</li>
 <li>Be deployed online so it's publicly accessible.</li>
 <li>Write your code DRY and build your APIs RESTful.</li>
-<li>Timeframe: 8 days</li>
+<li>Timeframe: 6 days</li>
 </ul>
 
 
